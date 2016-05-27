@@ -11,6 +11,10 @@ h3 {
   outline: 0;
 }
 
+ul {
+  list-style: none;
+}
+
 .hide-element {
   display: none !important;
 }
@@ -20,8 +24,8 @@ h3 {
 }
 
 .background-contrast {
-  background-color: #0143A3;
-  color: #fff;
+  background-color: rgba(163, 156, 156, 0.29);
+  color: rgba(0, 0, 0, 0.96);
 }
 
 nav a:visited, a:link {

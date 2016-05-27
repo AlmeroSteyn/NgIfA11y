@@ -4,6 +4,7 @@ import {A11yIndexComponent} from "./a11y-index.component";
 import {A11yNgIfPageComponent} from "./a11y-ng-if-page.component";
 import {A11yNgIfSectionComponent} from "./a11y-ng-if-section.component";
 import {A11yElvisComponent} from "./a11y-elvis.component";
+import {AccountService} from "./account.service";
 
 @Component({
   selector: 'app',
@@ -12,6 +13,7 @@ import {A11yElvisComponent} from "./a11y-elvis.component";
     ROUTER_DIRECTIVES
   ],
   providers: [
+    AccountService,
     ROUTER_PROVIDERS
   ]
 })
