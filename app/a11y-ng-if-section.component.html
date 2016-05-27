@@ -9,24 +9,32 @@
     <a href="http://angular.io">Read about your rights here.</a>
   </div>
 </article>
-<article class="well">
+<article class="well"
+         aria-live="assertive"
+         aria-atomic="true"
+         [attr.aria-busy]="isLoading">
   <section>
     <div class="row">
       <header class="col-xs-12">
         <h2>Your account info:</h2>
       </header>
     </div>
-    <div class="row">
-      <div class="col-xs-2">Name:</div>
-      <div class="col-xs-10">{{account?.name}}</div>
+    <div class="row" *ngIf="!account">
+      <div class="col-xs-12">Account info is loading...</div>
     </div>
-    <div class="row">
-      <div class="col-xs-2">Surname:</div>
-      <div class="col-xs-10">{{account?.surname}}</div>
-    </div>
-    <div class="row">
-      <div class="col-xs-2">Account status:</div>
-      <div class="col-xs-10">{{account?.status}}</div>
+    <div *ngIf="account">
+      <div class="row">
+        <div class="col-xs-2">Name:</div>
+        <div class="col-xs-10">{{account?.name}}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-2">Surname:</div>
+        <div class="col-xs-10">{{account?.surname}}</div>
+      </div>
+      <div class="row">
+        <div class="col-xs-2">Account status:</div>
+        <div class="col-xs-10">{{account?.status}}</div>
+      </div>
     </div>
   </section>
 </article>

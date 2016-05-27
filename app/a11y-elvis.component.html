@@ -16,15 +16,24 @@
         <h2>Your account info:</h2>
       </header>
     </div>
-    <div class="row">
-      <div class="col-xs-2">Name:</div>
+    <div class="row"
+         aria-live="assertive"
+         aria-atomic="true"
+         [attr.aria-busy]="isLoading">
+      <div class="col-xs-2">Account name:</div>
       <div class="col-xs-10">{{account?.name}}</div>
     </div>
-    <div class="row">
-      <div class="col-xs-2">Surname:</div>
+    <div class="row"
+         aria-live="assertive"
+         aria-atomic="true"
+         [attr.aria-busy]="isLoading">
+      <div class="col-xs-2">Account surname:</div>
       <div class="col-xs-10">{{account?.surname}}</div>
     </div>
-    <div class="row">
+    <div class="row"
+         aria-live="assertive"
+         aria-atomic="true"
+         [attr.aria-busy]="isLoading">
       <div class="col-xs-2">Account status:</div>
       <div class="col-xs-10">{{account?.status}}</div>
     </div>

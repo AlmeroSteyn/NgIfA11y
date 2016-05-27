@@ -11,12 +11,15 @@ import {Account} from "./account";
 export class A11yNgIfPageComponent{
 
   account: Account;
+  isLoading: boolean = false;
 
   constructor(private accountService: AccountService){}
 
   ngOnInit():void {
+    this.isLoading = true;
     this.accountService.getAccount().subscribe((item:Account) => {
       this.account = item;
+      this.isLoading = false;
     });
   }
 
