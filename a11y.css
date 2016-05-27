@@ -1,3 +1,7 @@
+body {
+  color: #000000;
+}
+
 label {
   color: #424242;
   width: 100%;
@@ -24,12 +28,25 @@ ul {
 }
 
 .background-contrast {
-  background-color: rgba(163, 156, 156, 0.29);
+  background-color: rgba(163, 156, 156, 0.13);
   color: rgba(0, 0, 0, 0.96);
 }
 
 nav a:visited, a:link {
   color: darkblue;
+}
+
+article {
+  font-size: 1.2em;
+}
+
+.well {
+  margin-top: 1em;
+}
+
+nav a {
+  font-weight: bold;
+  font-size: 1.5em;
 }
 
 .label-default {

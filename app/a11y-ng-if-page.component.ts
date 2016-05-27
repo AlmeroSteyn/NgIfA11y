@@ -1,10 +1,12 @@
 import {Component} from "@angular/core";
+import {CORE_DIRECTIVES} from "@angular/common";
 import {AccountService} from "./account.service";
 import {Account} from "./account";
 
 @Component({
   selector: 'a11y-ng-ig-page',
-  templateUrl: './app/a11y-ng-if-page.component.html'
+  templateUrl: './app/a11y-ng-if-page.component.html',
+  directives: [CORE_DIRECTIVES]
 })
 export class A11yNgIfPageComponent{
 
