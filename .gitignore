@@ -1,0 +1,7 @@
+typings
+typings.json
+*.js.map
+.idea
+node_modules
+npm-debug*.
+
