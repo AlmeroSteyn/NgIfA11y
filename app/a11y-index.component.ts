@@ -1,5 +1,5 @@
-import {Component} from "@angular/core";
 import {ROUTER_DIRECTIVES} from "@angular/router-deprecated";
+import {Component} from "@angular/core";
 
 @Component({
     selector: 'a11y-index',

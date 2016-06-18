@@ -12,7 +12,7 @@ export class AccountService{
   private accountUrl = 'app/account';
 
   getAccount (): Observable<Account> {
-    return this.http.get(this.accountUrl)
+    return this.http.get(this.accountUrl)   
       .delay(3000)
       .map(this.extractData);
   }
